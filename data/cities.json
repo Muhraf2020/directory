@@ -1,0 +1,152 @@
+[
+  {
+    "state": "FL",
+    "slug": "orlando",
+    "name": "Orlando",
+    "center": [
+      28.5383,
+      -81.3792
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "FL",
+    "slug": "miami",
+    "name": "Miami",
+    "center": [
+      25.7617,
+      -80.1918
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "FL",
+    "slug": "tampa",
+    "name": "Tampa",
+    "center": [
+      27.9506,
+      -82.4572
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "CA",
+    "slug": "los-angeles",
+    "name": "Los Angeles",
+    "center": [
+      34.0522,
+      -118.2437
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "CA",
+    "slug": "san-francisco",
+    "name": "San Francisco",
+    "center": [
+      37.7749,
+      -122.4194
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "CA",
+    "slug": "san-diego",
+    "name": "San Diego",
+    "center": [
+      32.7157,
+      -117.1611
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "TX",
+    "slug": "houston",
+    "name": "Houston",
+    "center": [
+      29.7604,
+      -95.3698
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "TX",
+    "slug": "dallas",
+    "name": "Dallas",
+    "center": [
+      32.7767,
+      -96.797
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "TX",
+    "slug": "austin",
+    "name": "Austin",
+    "center": [
+      30.2672,
+      -97.7431
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "NY",
+    "slug": "new-york",
+    "name": "New York City",
+    "center": [
+      40.7128,
+      -74.006
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "NY",
+    "slug": "buffalo",
+    "name": "Buffalo",
+    "center": [
+      42.8864,
+      -78.8784
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "NY",
+    "slug": "rochester",
+    "name": "Rochester",
+    "center": [
+      43.1566,
+      -77.6088
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "WA",
+    "slug": "seattle",
+    "name": "Seattle",
+    "center": [
+      47.6062,
+      -122.3321
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "WA",
+    "slug": "spokane",
+    "name": "Spokane",
+    "center": [
+      47.6588,
+      -117.426
+    ],
+    "stores_count": 4
+  },
+  {
+    "state": "WA",
+    "slug": "tacoma",
+    "name": "Tacoma",
+    "center": [
+      47.2529,
+      -122.4443
+    ],
+    "stores_count": 4
+  }
+]

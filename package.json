@@ -1,0 +1,10 @@
+{
+  "name": "directory-site",
+  "version": "1.0.0",
+  "description": "Static directory website for scratch‑and‑dent appliances",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-pages.js",
+    "serve": "npx serve dist"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "code": "FL",
+    "name": "Florida",
+    "cities_count": 3,
+    "stores_count": 12
+  },
+  {
+    "code": "CA",
+    "name": "California",
+    "cities_count": 3,
+    "stores_count": 12
+  },
+  {
+    "code": "TX",
+    "name": "Texas",
+    "cities_count": 3,
+    "stores_count": 12
+  },
+  {
+    "code": "NY",
+    "name": "New York",
+    "cities_count": 3,
+    "stores_count": 12
+  },
+  {
+    "code": "WA",
+    "name": "Washington",
+    "cities_count": 3,
+    "stores_count": 12
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "state-CA",
+    "title": "California",
+    "type": "state",
+    "url": "/scratch-and-dent-appliances/california/"
+  },
+  {
+    "id": "state-FL",
+    "title": "Florida",
+    "type": "state",
+    "url": "/scratch-and-dent-appliances/florida/"
+  },
+  {
+    "id": "state-NY",
+    "title": "New York",
+    "type": "state",
+    "url": "/scratch-and-dent-appliances/new-york/"
+  },
+  {
+    "id": "state-TX",
+    "title": "Texas",
+    "type": "state",
+    "url": "/scratch-and-dent-appliances/texas/"
+  },
+  {
+    "id": "state-WA",
+    "title": "Washington",
+    "type": "state",
+    "url": "/scratch-and-dent-appliances/washington/"
+  },
+  {
+    "id": "city-FL-orlando",
+    "title": "Orlando, FL",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/florida/orlando/"
+  },
+  {
+    "id": "city-FL-miami",
+    "title": "Miami, FL",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/florida/miami/"
+  },
+  {
+    "id": "city-FL-tampa",
+    "title": "Tampa, FL",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/florida/tampa/"
+  },
+  {
+    "id": "city-CA-los-angeles",
+    "title": "Los Angeles, CA",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/california/los-angeles/"
+  },
+  {
+    "id": "city-CA-san-francisco",
+    "title": "San Francisco, CA",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/california/san-francisco/"
+  },
+  {
+    "id": "city-CA-san-diego",
+    "title": "San Diego, CA",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/california/san-diego/"
+  },
+  {
+    "id": "city-TX-houston",
+    "title": "Houston, TX",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/texas/houston/"
+  },
+  {
+    "id": "city-TX-dallas",
+    "title": "Dallas, TX",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/texas/dallas/"
+  },
+  {
+    "id": "city-TX-austin",
+    "title": "Austin, TX",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/texas/austin/"
+  },
+  {
+    "id": "city-NY-new-york",
+    "title": "New York City, NY",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/new-york/new-york/"
+  },
+  {
+    "id": "city-NY-buffalo",
+    "title": "Buffalo, NY",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/new-york/buffalo/"
+  },
+  {
+    "id": "city-NY-rochester",
+    "title": "Rochester, NY",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/new-york/rochester/"
+  },
+  {
+    "id": "city-WA-seattle",
+    "title": "Seattle, WA",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/washington/seattle/"
+  },
+  {
+    "id": "city-WA-spokane",
+    "title": "Spokane, WA",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/washington/spokane/"
+  },
+  {
+    "id": "city-WA-tacoma",
+    "title": "Tacoma, WA",
+    "type": "city",
+    "url": "/scratch-and-dent-appliances/washington/tacoma/"
+  }
+]

@@ -1,0 +1,3062 @@
+[
+  {
+    "id": "fl-orlando-001",
+    "name": "Orlando Appliance Outlet 1",
+    "state": "FL",
+    "city_slug": "orlando",
+    "address": "123 Orlando St, Orlando, FL",
+    "phone": "+1-555-555-5129",
+    "website": "https://example.com",
+    "coords": [
+      28.522,
+      -81.367
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "fl-orlando-002",
+    "name": "Orlando Appliance Outlet 2",
+    "state": "FL",
+    "city_slug": "orlando",
+    "address": "123 Orlando St, Orlando, FL",
+    "phone": "+1-555-555-1588",
+    "website": "https://example.com",
+    "coords": [
+      28.548,
+      -81.3883
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "fl-orlando-003",
+    "name": "Orlando Appliance Outlet 3",
+    "state": "FL",
+    "city_slug": "orlando",
+    "address": "123 Orlando St, Orlando, FL",
+    "phone": "+1-555-555-6383",
+    "website": "https://example.com",
+    "coords": [
+      28.5492,
+      -81.3862
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "fl-orlando-004",
+    "name": "Orlando Appliance Outlet 4",
+    "state": "FL",
+    "city_slug": "orlando",
+    "address": "123 Orlando St, Orlando, FL",
+    "phone": "+1-555-555-7901",
+    "website": "https://example.com",
+    "coords": [
+      28.5219,
+      -81.3757
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "fl-miami-001",
+    "name": "Miami Appliance Outlet 1",
+    "state": "FL",
+    "city_slug": "miami",
+    "address": "123 Miami St, Miami, FL",
+    "phone": "+1-555-555-2888",
+    "website": "https://example.com",
+    "coords": [
+      25.7668,
+      -80.1819
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "fl-miami-002",
+    "name": "Miami Appliance Outlet 2",
+    "state": "FL",
+    "city_slug": "miami",
+    "address": "123 Miami St, Miami, FL",
+    "phone": "+1-555-555-9433",
+    "website": "https://example.com",
+    "coords": [
+      25.7757,
+      -80.1787
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "fl-miami-003",
+    "name": "Miami Appliance Outlet 3",
+    "state": "FL",
+    "city_slug": "miami",
+    "address": "123 Miami St, Miami, FL",
+    "phone": "+1-555-555-9740",
+    "website": "https://example.com",
+    "coords": [
+      25.7632,
+      -80.1856
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "fl-miami-004",
+    "name": "Miami Appliance Outlet 4",
+    "state": "FL",
+    "city_slug": "miami",
+    "address": "123 Miami St, Miami, FL",
+    "phone": "+1-555-555-1030",
+    "website": "https://example.com",
+    "coords": [
+      25.7589,
+      -80.1723
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "fl-tampa-001",
+    "name": "Tampa Appliance Outlet 1",
+    "state": "FL",
+    "city_slug": "tampa",
+    "address": "123 Tampa St, Tampa, FL",
+    "phone": "+1-555-555-4309",
+    "website": "https://example.com",
+    "coords": [
+      27.9402,
+      -82.4722
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "fl-tampa-002",
+    "name": "Tampa Appliance Outlet 2",
+    "state": "FL",
+    "city_slug": "tampa",
+    "address": "123 Tampa St, Tampa, FL",
+    "phone": "+1-555-555-7037",
+    "website": "https://example.com",
+    "coords": [
+      27.9638,
+      -82.4625
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "fl-tampa-003",
+    "name": "Tampa Appliance Outlet 3",
+    "state": "FL",
+    "city_slug": "tampa",
+    "address": "123 Tampa St, Tampa, FL",
+    "phone": "+1-555-555-2966",
+    "website": "https://example.com",
+    "coords": [
+      27.9587,
+      -82.4552
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "fl-tampa-004",
+    "name": "Tampa Appliance Outlet 4",
+    "state": "FL",
+    "city_slug": "tampa",
+    "address": "123 Tampa St, Tampa, FL",
+    "phone": "+1-555-555-7500",
+    "website": "https://example.com",
+    "coords": [
+      27.9409,
+      -82.4704
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ca-los-angeles-001",
+    "name": "Los Angeles Appliance Outlet 1",
+    "state": "CA",
+    "city_slug": "los-angeles",
+    "address": "123 Los Angeles St, Los Angeles, CA",
+    "phone": "+1-555-555-1853",
+    "website": "https://example.com",
+    "coords": [
+      34.0327,
+      -118.2634
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "ca-los-angeles-002",
+    "name": "Los Angeles Appliance Outlet 2",
+    "state": "CA",
+    "city_slug": "los-angeles",
+    "address": "123 Los Angeles St, Los Angeles, CA",
+    "phone": "+1-555-555-7278",
+    "website": "https://example.com",
+    "coords": [
+      34.0659,
+      -118.248
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ca-los-angeles-003",
+    "name": "Los Angeles Appliance Outlet 3",
+    "state": "CA",
+    "city_slug": "los-angeles",
+    "address": "123 Los Angeles St, Los Angeles, CA",
+    "phone": "+1-555-555-1237",
+    "website": "https://example.com",
+    "coords": [
+      34.045,
+      -118.2452
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ca-los-angeles-004",
+    "name": "Los Angeles Appliance Outlet 4",
+    "state": "CA",
+    "city_slug": "los-angeles",
+    "address": "123 Los Angeles St, Los Angeles, CA",
+    "phone": "+1-555-555-5622",
+    "website": "https://example.com",
+    "coords": [
+      34.0331,
+      -118.2452
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ca-san-francisco-001",
+    "name": "San Francisco Appliance Outlet 1",
+    "state": "CA",
+    "city_slug": "san-francisco",
+    "address": "123 San Francisco St, San Francisco, CA",
+    "phone": "+1-555-555-4271",
+    "website": "https://example.com",
+    "coords": [
+      37.779,
+      -122.438
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "ca-san-francisco-002",
+    "name": "San Francisco Appliance Outlet 2",
+    "state": "CA",
+    "city_slug": "san-francisco",
+    "address": "123 San Francisco St, San Francisco, CA",
+    "phone": "+1-555-555-4237",
+    "website": "https://example.com",
+    "coords": [
+      37.7906,
+      -122.4354
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ca-san-francisco-003",
+    "name": "San Francisco Appliance Outlet 3",
+    "state": "CA",
+    "city_slug": "san-francisco",
+    "address": "123 San Francisco St, San Francisco, CA",
+    "phone": "+1-555-555-5261",
+    "website": "https://example.com",
+    "coords": [
+      37.7556,
+      -122.4073
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ca-san-francisco-004",
+    "name": "San Francisco Appliance Outlet 4",
+    "state": "CA",
+    "city_slug": "san-francisco",
+    "address": "123 San Francisco St, San Francisco, CA",
+    "phone": "+1-555-555-5184",
+    "website": "https://example.com",
+    "coords": [
+      37.7931,
+      -122.4111
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ca-san-diego-001",
+    "name": "San Diego Appliance Outlet 1",
+    "state": "CA",
+    "city_slug": "san-diego",
+    "address": "123 San Diego St, San Diego, CA",
+    "phone": "+1-555-555-5907",
+    "website": "https://example.com",
+    "coords": [
+      32.7228,
+      -117.1582
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "ca-san-diego-002",
+    "name": "San Diego Appliance Outlet 2",
+    "state": "CA",
+    "city_slug": "san-diego",
+    "address": "123 San Diego St, San Diego, CA",
+    "phone": "+1-555-555-1675",
+    "website": "https://example.com",
+    "coords": [
+      32.6984,
+      -117.1514
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ca-san-diego-003",
+    "name": "San Diego Appliance Outlet 3",
+    "state": "CA",
+    "city_slug": "san-diego",
+    "address": "123 San Diego St, San Diego, CA",
+    "phone": "+1-555-555-4494",
+    "website": "https://example.com",
+    "coords": [
+      32.7143,
+      -117.1793
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ca-san-diego-004",
+    "name": "San Diego Appliance Outlet 4",
+    "state": "CA",
+    "city_slug": "san-diego",
+    "address": "123 San Diego St, San Diego, CA",
+    "phone": "+1-555-555-9219",
+    "website": "https://example.com",
+    "coords": [
+      32.7022,
+      -117.1668
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "tx-houston-001",
+    "name": "Houston Appliance Outlet 1",
+    "state": "TX",
+    "city_slug": "houston",
+    "address": "123 Houston St, Houston, TX",
+    "phone": "+1-555-555-9102",
+    "website": "https://example.com",
+    "coords": [
+      29.7447,
+      -95.3784
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "tx-houston-002",
+    "name": "Houston Appliance Outlet 2",
+    "state": "TX",
+    "city_slug": "houston",
+    "address": "123 Houston St, Houston, TX",
+    "phone": "+1-555-555-4201",
+    "website": "https://example.com",
+    "coords": [
+      29.7644,
+      -95.3828
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "tx-houston-003",
+    "name": "Houston Appliance Outlet 3",
+    "state": "TX",
+    "city_slug": "houston",
+    "address": "123 Houston St, Houston, TX",
+    "phone": "+1-555-555-9264",
+    "website": "https://example.com",
+    "coords": [
+      29.7614,
+      -95.3828
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "tx-houston-004",
+    "name": "Houston Appliance Outlet 4",
+    "state": "TX",
+    "city_slug": "houston",
+    "address": "123 Houston St, Houston, TX",
+    "phone": "+1-555-555-2013",
+    "website": "https://example.com",
+    "coords": [
+      29.7725,
+      -95.3622
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "tx-dallas-001",
+    "name": "Dallas Appliance Outlet 1",
+    "state": "TX",
+    "city_slug": "dallas",
+    "address": "123 Dallas St, Dallas, TX",
+    "phone": "+1-555-555-7177",
+    "website": "https://example.com",
+    "coords": [
+      32.763,
+      -96.7954
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "tx-dallas-002",
+    "name": "Dallas Appliance Outlet 2",
+    "state": "TX",
+    "city_slug": "dallas",
+    "address": "123 Dallas St, Dallas, TX",
+    "phone": "+1-555-555-4894",
+    "website": "https://example.com",
+    "coords": [
+      32.7629,
+      -96.8024
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "tx-dallas-003",
+    "name": "Dallas Appliance Outlet 3",
+    "state": "TX",
+    "city_slug": "dallas",
+    "address": "123 Dallas St, Dallas, TX",
+    "phone": "+1-555-555-2764",
+    "website": "https://example.com",
+    "coords": [
+      32.7722,
+      -96.7913
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "tx-dallas-004",
+    "name": "Dallas Appliance Outlet 4",
+    "state": "TX",
+    "city_slug": "dallas",
+    "address": "123 Dallas St, Dallas, TX",
+    "phone": "+1-555-555-3610",
+    "website": "https://example.com",
+    "coords": [
+      32.7841,
+      -96.8067
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "tx-austin-001",
+    "name": "Austin Appliance Outlet 1",
+    "state": "TX",
+    "city_slug": "austin",
+    "address": "123 Austin St, Austin, TX",
+    "phone": "+1-555-555-8124",
+    "website": "https://example.com",
+    "coords": [
+      30.267,
+      -97.7446
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "tx-austin-002",
+    "name": "Austin Appliance Outlet 2",
+    "state": "TX",
+    "city_slug": "austin",
+    "address": "123 Austin St, Austin, TX",
+    "phone": "+1-555-555-3096",
+    "website": "https://example.com",
+    "coords": [
+      30.2851,
+      -97.7435
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "tx-austin-003",
+    "name": "Austin Appliance Outlet 3",
+    "state": "TX",
+    "city_slug": "austin",
+    "address": "123 Austin St, Austin, TX",
+    "phone": "+1-555-555-7228",
+    "website": "https://example.com",
+    "coords": [
+      30.2772,
+      -97.7268
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "tx-austin-004",
+    "name": "Austin Appliance Outlet 4",
+    "state": "TX",
+    "city_slug": "austin",
+    "address": "123 Austin St, Austin, TX",
+    "phone": "+1-555-555-7837",
+    "website": "https://example.com",
+    "coords": [
+      30.2618,
+      -97.7617
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ny-new-york-001",
+    "name": "New York City Appliance Outlet 1",
+    "state": "NY",
+    "city_slug": "new-york",
+    "address": "123 New York City St, New York City, NY",
+    "phone": "+1-555-555-3034",
+    "website": "https://example.com",
+    "coords": [
+      40.7134,
+      -74.0007
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "ny-new-york-002",
+    "name": "New York City Appliance Outlet 2",
+    "state": "NY",
+    "city_slug": "new-york",
+    "address": "123 New York City St, New York City, NY",
+    "phone": "+1-555-555-5666",
+    "website": "https://example.com",
+    "coords": [
+      40.7059,
+      -73.994
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ny-new-york-003",
+    "name": "New York City Appliance Outlet 3",
+    "state": "NY",
+    "city_slug": "new-york",
+    "address": "123 New York City St, New York City, NY",
+    "phone": "+1-555-555-5007",
+    "website": "https://example.com",
+    "coords": [
+      40.7122,
+      -74.0255
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ny-new-york-004",
+    "name": "New York City Appliance Outlet 4",
+    "state": "NY",
+    "city_slug": "new-york",
+    "address": "123 New York City St, New York City, NY",
+    "phone": "+1-555-555-6322",
+    "website": "https://example.com",
+    "coords": [
+      40.7121,
+      -73.9929
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ny-buffalo-001",
+    "name": "Buffalo Appliance Outlet 1",
+    "state": "NY",
+    "city_slug": "buffalo",
+    "address": "123 Buffalo St, Buffalo, NY",
+    "phone": "+1-555-555-8083",
+    "website": "https://example.com",
+    "coords": [
+      42.8742,
+      -78.8788
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "ny-buffalo-002",
+    "name": "Buffalo Appliance Outlet 2",
+    "state": "NY",
+    "city_slug": "buffalo",
+    "address": "123 Buffalo St, Buffalo, NY",
+    "phone": "+1-555-555-8124",
+    "website": "https://example.com",
+    "coords": [
+      42.8903,
+      -78.8684
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ny-buffalo-003",
+    "name": "Buffalo Appliance Outlet 3",
+    "state": "NY",
+    "city_slug": "buffalo",
+    "address": "123 Buffalo St, Buffalo, NY",
+    "phone": "+1-555-555-3978",
+    "website": "https://example.com",
+    "coords": [
+      42.8975,
+      -78.8775
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ny-buffalo-004",
+    "name": "Buffalo Appliance Outlet 4",
+    "state": "NY",
+    "city_slug": "buffalo",
+    "address": "123 Buffalo St, Buffalo, NY",
+    "phone": "+1-555-555-3322",
+    "website": "https://example.com",
+    "coords": [
+      42.8683,
+      -78.8613
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ny-rochester-001",
+    "name": "Rochester Appliance Outlet 1",
+    "state": "NY",
+    "city_slug": "rochester",
+    "address": "123 Rochester St, Rochester, NY",
+    "phone": "+1-555-555-5171",
+    "website": "https://example.com",
+    "coords": [
+      43.1421,
+      -77.6049
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "ny-rochester-002",
+    "name": "Rochester Appliance Outlet 2",
+    "state": "NY",
+    "city_slug": "rochester",
+    "address": "123 Rochester St, Rochester, NY",
+    "phone": "+1-555-555-7697",
+    "website": "https://example.com",
+    "coords": [
+      43.1464,
+      -77.6249
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ny-rochester-003",
+    "name": "Rochester Appliance Outlet 3",
+    "state": "NY",
+    "city_slug": "rochester",
+    "address": "123 Rochester St, Rochester, NY",
+    "phone": "+1-555-555-7877",
+    "website": "https://example.com",
+    "coords": [
+      43.1423,
+      -77.6158
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "ny-rochester-004",
+    "name": "Rochester Appliance Outlet 4",
+    "state": "NY",
+    "city_slug": "rochester",
+    "address": "123 Rochester St, Rochester, NY",
+    "phone": "+1-555-555-1812",
+    "website": "https://example.com",
+    "coords": [
+      43.1696,
+      -77.6195
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "wa-seattle-001",
+    "name": "Seattle Appliance Outlet 1",
+    "state": "WA",
+    "city_slug": "seattle",
+    "address": "123 Seattle St, Seattle, WA",
+    "phone": "+1-555-555-9090",
+    "website": "https://example.com",
+    "coords": [
+      47.5999,
+      -122.3383
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "wa-seattle-002",
+    "name": "Seattle Appliance Outlet 2",
+    "state": "WA",
+    "city_slug": "seattle",
+    "address": "123 Seattle St, Seattle, WA",
+    "phone": "+1-555-555-7385",
+    "website": "https://example.com",
+    "coords": [
+      47.614,
+      -122.3231
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "wa-seattle-003",
+    "name": "Seattle Appliance Outlet 3",
+    "state": "WA",
+    "city_slug": "seattle",
+    "address": "123 Seattle St, Seattle, WA",
+    "phone": "+1-555-555-8299",
+    "website": "https://example.com",
+    "coords": [
+      47.5931,
+      -122.3401
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "wa-seattle-004",
+    "name": "Seattle Appliance Outlet 4",
+    "state": "WA",
+    "city_slug": "seattle",
+    "address": "123 Seattle St, Seattle, WA",
+    "phone": "+1-555-555-8813",
+    "website": "https://example.com",
+    "coords": [
+      47.6252,
+      -122.3325
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "wa-spokane-001",
+    "name": "Spokane Appliance Outlet 1",
+    "state": "WA",
+    "city_slug": "spokane",
+    "address": "123 Spokane St, Spokane, WA",
+    "phone": "+1-555-555-2349",
+    "website": "https://example.com",
+    "coords": [
+      47.6612,
+      -117.4403
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "wa-spokane-002",
+    "name": "Spokane Appliance Outlet 2",
+    "state": "WA",
+    "city_slug": "spokane",
+    "address": "123 Spokane St, Spokane, WA",
+    "phone": "+1-555-555-1915",
+    "website": "https://example.com",
+    "coords": [
+      47.647,
+      -117.4103
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "wa-spokane-003",
+    "name": "Spokane Appliance Outlet 3",
+    "state": "WA",
+    "city_slug": "spokane",
+    "address": "123 Spokane St, Spokane, WA",
+    "phone": "+1-555-555-1584",
+    "website": "https://example.com",
+    "coords": [
+      47.659,
+      -117.4084
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": false,
+      "stoves_ranges": true,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "wa-spokane-004",
+    "name": "Spokane Appliance Outlet 4",
+    "state": "WA",
+    "city_slug": "spokane",
+    "address": "123 Spokane St, Spokane, WA",
+    "phone": "+1-555-555-7764",
+    "website": "https://example.com",
+    "coords": [
+      47.6455,
+      -117.4337
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "wa-tacoma-001",
+    "name": "Tacoma Appliance Outlet 1",
+    "state": "WA",
+    "city_slug": "tacoma",
+    "address": "123 Tacoma St, Tacoma, WA",
+    "phone": "+1-555-555-4107",
+    "website": "https://example.com",
+    "coords": [
+      47.2383,
+      -122.4339
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": false,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": true
+  },
+  {
+    "id": "wa-tacoma-002",
+    "name": "Tacoma Appliance Outlet 2",
+    "state": "WA",
+    "city_slug": "tacoma",
+    "address": "123 Tacoma St, Tacoma, WA",
+    "phone": "+1-555-555-8961",
+    "website": "https://example.com",
+    "coords": [
+      47.235,
+      -122.4493
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": false,
+      "dishwashers": false
+    },
+    "services": {
+      "delivery": true,
+      "install": false
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "wa-tacoma-003",
+    "name": "Tacoma Appliance Outlet 3",
+    "state": "WA",
+    "city_slug": "tacoma",
+    "address": "123 Tacoma St, Tacoma, WA",
+    "phone": "+1-555-555-9120",
+    "website": "https://example.com",
+    "coords": [
+      47.2541,
+      -122.4518
+    ],
+    "appliances": {
+      "refrigerators": true,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": true,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  },
+  {
+    "id": "wa-tacoma-004",
+    "name": "Tacoma Appliance Outlet 4",
+    "state": "WA",
+    "city_slug": "tacoma",
+    "address": "123 Tacoma St, Tacoma, WA",
+    "phone": "+1-555-555-6582",
+    "website": "https://example.com",
+    "coords": [
+      47.2424,
+      -122.4542
+    ],
+    "appliances": {
+      "refrigerators": false,
+      "washers_dryers": true,
+      "stoves_ranges": true,
+      "dishwashers": true
+    },
+    "services": {
+      "delivery": false,
+      "install": true
+    },
+    "hours": {
+      "mon": [
+        "09:00",
+        "18:00"
+      ],
+      "tue": [
+        "09:00",
+        "18:00"
+      ],
+      "wed": [
+        "09:00",
+        "18:00"
+      ],
+      "thu": [
+        "09:00",
+        "18:00"
+      ],
+      "fri": [
+        "09:00",
+        "18:00"
+      ],
+      "sat": [
+        "10:00",
+        "16:00"
+      ],
+      "sun": null
+    },
+    "featured": false
+  }
+]
