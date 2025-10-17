@@ -2,7 +2,10 @@ name: Deploy Pages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - master
+  workflow_dispatch: {}   # ← adds the “Run workflow” button in Actions tab
 
 permissions:
   contents: read
@@ -28,8 +31,6 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      # If this repo is a GitHub project page, pass BASE_PATH as repo name.
-      # If you use a custom domain at root, delete the env: block.
       - name: Build site
         run: npm run build
         env:
