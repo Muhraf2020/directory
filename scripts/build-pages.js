@@ -1,3 +1,4 @@
+// scripts/build-pages.js
 const fs = require('fs');
 const path = require('path');
 
@@ -115,14 +116,14 @@ function renderPage({ title, canonical, ogTitle, ogDescription, header, content,
   return layoutTemplate
     .replace(/{{title}}/g, title)
     .replace(/{{canonical}}/g, canonical)
-    .replace(/{{ogTitle}}/g, ogTitle)
-    .replace(/{{ogDescription}}/g, ogDescription)
+    .replace(/{{ogTitle}}/g, ogTitle || title)
+    .replace(/{{ogDescription}}/g, ogDescription || '')
     .replace(/{{header}}/g, header)
     .replace(/{{content}}/g, content)
     .replace(/{{footer}}/g, footer)
     .replace(/{{jsonLd}}/g, jsonLd)
     .replace(/{{extraScripts}}/g, extraScripts)
-    .replace(/{{gaId}}/g, 'G-XXXXXXX')
+    .replace(/{{gaId}}/g, process.env.GA_TAG || 'G-XXXXXXX')
     .replace(/{{base}}/g, normalizedBase);
 }
 
@@ -146,8 +147,13 @@ function buildHeader() {
 
 function buildFooter() {
   const popular = [...states].sort((a,b) => b.stores_count - a.stores_count).slice(0, 5);
-  const popularLinks = popular.map(st => `<li><a href="${prefix('scratch-and-dent-appliances/' + slugify(st.name) + '/')}">${st.name}</a></li>`).join('');
-  const stateLinks = states.sort((a,b) => a.name.localeCompare(b.name)).map(st => `<li><a href="${prefix('scratch-and-dent-appliances/' + slugify(st.name) + '/')}">${st.name}</a></li>`).join('');
+  const popularLinks = popular
+    .map(st => `<li><a href="${prefix('scratch-and-dent-appliances/' + slugify(st.name) + '/')}">${st.name}</a></li>`)
+    .join('');
+  const stateLinks = [...states]
+    .sort((a,b) => a.name.localeCompare(b.name))
+    .map(st => `<li><a href="${prefix('scratch-and-dent-appliances/' + slugify(st.name) + '/')}">${st.name}</a></li>`)
+    .join('');
   return `
 <footer>
   <div class="container footer-inner">
@@ -167,8 +173,8 @@ function buildFooter() {
       <ul>${popularLinks}</ul>
     </div>
     <div>
-      <h4>Browse by State</h4>
-      <ul>${stateLinks}</ul>
+      <h4>All States</h4>
+      <ul class="all-states">${stateLinks}</ul>
     </div>
   </div>
 </footer>`;
@@ -179,15 +185,55 @@ const footerHtml = buildFooter();
 
 // Build Home Page
 function buildHome() {
-  const statsHtml = `\n    <div class="stats">\n      <div class="stat"><h2>${totalStates}</h2><p>States</p></div>\n      <div class="stat"><h2>${totalCities}</h2><p>Cities</p></div>\n      <div class="stat"><h2>${totalStores}</h2><p>Stores</p></div>\n    </div>`;
+  const statsHtml = `
+    <div class="stats">
+      <div class="stat"><h2>${totalStates}</h2><p>States</p></div>
+      <div class="stat"><h2>${totalCities}</h2><p>Cities</p></div>
+      <div class="stat"><h2>${totalStores}</h2><p>Stores</p></div>
+    </div>`;
   // Top states cards (8)
   const topStates = [...states].sort((a,b) => b.stores_count - a.stores_count).slice(0, 8);
   const cards = topStates.map(st => {
     const url = prefix(`scratch-and-dent-appliances/${slugify(st.name)}/`);
-    return `\n      <div class="card">\n        <h3>${st.name}</h3>\n        <p>${st.cities_count} cities, ${st.stores_count} stores</p>\n        <p><a href="${url}">Browse ${st.name}</a></p>\n      </div>`;
+    return `
+      <div class="card">
+        <h3>${st.name}</h3>
+        <p>${st.cities_count} cities, ${st.stores_count} stores</p>
+        <p><a href="${url}">Browse ${st.name}</a></p>
+      </div>`;
   }).join('');
-  const benefits = `\n  <section class="container">\n    <h2>Why Shop Scratch &amp; Dent?</h2>\n    <p>Buying scratch and dent appliances can save you money and keep still-perfectly working products out of landfills. Our directory helps you discover local warehouses and outlets offering deep discounts on gently blemished appliances.</p>\n    <div class="grid grid-3">\n      <div class="card"><h3>Big Savings</h3><p>Find deals with savings of 30–70% off retail prices on refrigerators, washers &amp; dryers, ranges and more.</p></div>\n      <div class="card"><h3>Support Local</h3><p>Shop local businesses and outlets in your state and city – keeping money in your community.</p></div>\n      <div class="card"><h3>Reduce Waste</h3><p>Give slightly imperfect appliances a second life and help reduce unnecessary waste.</p></div>\n    </div>\n  </section>`;
-  const content = `\n  <section class="hero">\n    <div class="container">\n      <h1>Discover Discount Appliances Near You</h1>\n      <p>Browse our scratch &amp; dent directory to find great deals on appliances in your state.</p>\n      ${statsHtml}\n    </div>\n  </section>\n  <section class="container">\n    <h2>Browse Top States</h2>\n    <div class="grid grid-3">${cards}</div>\n  </section>\n  <section class="container">\n    <h2>Popular Appliance Categories</h2>\n    <div class="grid grid-4">\n      <div class="card category-card"><h3>Refrigerators</h3><p>${categoryTotals.refrigerators} stores</p></div>\n      <div class="card category-card"><h3>Washers &amp; Dryers</h3><p>${categoryTotals.washers_dryers} stores</p></div>\n      <div class="card category-card"><h3>Stoves &amp; Ranges</h3><p>${categoryTotals.stoves_ranges} stores</p></div>\n      <div class="card category-card"><h3>Dishwashers</h3><p>${categoryTotals.dishwashers} stores</p></div>\n    </div>\n  </section>\n  ${benefits}`;
+  const benefits = `
+  <section class="container">
+    <h2>Why Shop Scratch &amp; Dent?</h2>
+    <p>Buying scratch and dent appliances can save you money and keep still-perfectly working products out of landfills. Our directory helps you discover local warehouses and outlets offering deep discounts on gently blemished appliances.</p>
+    <div class="grid grid-3">
+      <div class="card"><h3>Big Savings</h3><p>Find deals with savings of 30–70% off retail prices on refrigerators, washers &amp; dryers, ranges and more.</p></div>
+      <div class="card"><h3>Support Local</h3><p>Shop local businesses and outlets in your state and city – keeping money in your community.</p></div>
+      <div class="card"><h3>Reduce Waste</h3><p>Give slightly imperfect appliances a second life and help reduce unnecessary waste.</p></div>
+    </div>
+  </section>`;
+  const content = `
+  <section class="hero">
+    <div class="container">
+      <h1>Discover Discount Appliances Near You</h1>
+      <p>Browse our scratch &amp; dent directory to find great deals on appliances in your state.</p>
+      ${statsHtml}
+    </div>
+  </section>
+  <section class="container">
+    <h2>Browse Top States</h2>
+    <div class="grid grid-3">${cards}</div>
+  </section>
+  <section class="container">
+    <h2>Popular Appliance Categories</h2>
+    <div class="grid grid-4">
+      <div class="card category-card"><h3>Refrigerators</h3><p>${categoryTotals.refrigerators} stores</p></div>
+      <div class="card category-card"><h3>Washers &amp; Dryers</h3><p>${categoryTotals.washers_dryers} stores</p></div>
+      <div class="card category-card"><h3>Stoves &amp; Ranges</h3><p>${categoryTotals.stoves_ranges} stores</p></div>
+      <div class="card category-card"><h3>Dishwashers</h3><p>${categoryTotals.dishwashers} stores</p></div>
+    </div>
+  </section>
+  ${benefits}`;
   // JSON-LD for home (WebSite + Organization)
   const jsonLd = `<script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
@@ -231,7 +277,13 @@ function buildStatesIndex() {
     }).join('');
     return `<h3 id="${l}">${l}</h3><ul>${listHtml}</ul>`;
   }).join('');
-  const content = `\n  <div class="container">\n    <h1>Browse States</h1>\n    <p>Explore scratch &amp; dent appliance outlets across the nation. Select a state to see participating cities and stores.</p>\n    <p>${navHtml}</p>\n    ${sectionsHtml}\n  </div>`;
+  const content = `
+  <div class="container">
+    <h1>Browse States</h1>
+    <p>Explore scratch &amp; dent appliance outlets across the nation. Select a state to see participating cities and stores.</p>
+    <p>${navHtml}</p>
+    ${sectionsHtml}
+  </div>`;
   const jsonLd = `<script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -272,7 +324,13 @@ function buildStatePages() {
       const url = prefix(`scratch-and-dent-appliances/${stateSlug}/${city.slug}/`);
       return `<div class="card city-card" data-name="${city.name}" id="${city.slug}"><h3>${city.name}</h3><p>${city.stores_count} stores</p><p><a href="${url}">View stores</a></p></div>`;
     }).join('');
-    const content = `\n  <div class="container">\n    <h1>${st.name} Scratch &amp; Dent Appliance Stores</h1>\n    ${intro}\n    ${searchBox}\n    <div id="city-list" class="grid grid-3">${cityCards}</div>\n  </div>`;
+    const content = `
+  <div class="container">
+    <h1>${st.name} Scratch &amp; Dent Appliance Stores</h1>
+    ${intro}
+    ${searchBox}
+    <div id="city-list" class="grid grid-3">${cityCards}</div>
+  </div>`;
     const jsonLd = `<script type="application/ld+json">${JSON.stringify({
       "@context": "https://schema.org",
       "@type": "ItemList",
@@ -318,14 +376,20 @@ function buildCityPages() {
       if (store.services.delivery) deliveryCount++;
       if (store.services.install) installCount++;
     });
-    const kpiChips = `\n      <div class="kpi">\n        <span class="chip">${numStores} stores</span>\n        <span class="chip">${deliveryCount} offer delivery</span>\n        <span class="chip">${installCount} offer install</span>\n      </div>`;
+    const kpiChips = `
+      <div class="kpi">
+        <span class="chip">${numStores} stores</span>
+        <span class="chip">${deliveryCount} offer delivery</span>
+        <span class="chip">${installCount} offer install</span>
+      </div>`;
     const intro = `<p>Looking for discount appliances in ${city.name}, ${st.code}? Save big on refrigerators, washers and dryers, ranges and more when you shop scratch &amp; dent. Expect savings from 30–70% off full retail prices at the stores listed below.</p>`;
     // Build quick navigation list and store cards. Use store.id as anchor targets so
     // users can quickly jump to any listing. Normalise the appliance category
     // object – data may use `categories` or `appliances` for the same
     // information.
     const quickLinks = sortedStores.map(store => `<li><a href="#store-${store.id}">${store.name}</a></li>`).join('');
-    const quickNavSection = `\n    <nav class="quick-nav" aria-label="Quick navigation"><h2>Quick Navigation</h2><ul>${quickLinks}</ul></nav>`;
+    const quickNavSection = `
+    <nav class="quick-nav" aria-label="Quick navigation"><h2>Quick Navigation</h2><ul>${quickLinks}</ul></nav>`;
 
     const storeCards = sortedStores.map((store, idx) => {
       const cats = store.categories || store.appliances || {};
@@ -337,11 +401,29 @@ function buildCityPages() {
       const services = [];
       if (store.services && store.services.delivery) services.push('Delivery');
       if (store.services && store.services.install) services.push('Install');
-      return `\n        <div class="card store-card" id="store-${store.id}" data-hours='${JSON.stringify(store.hours)}'>\n          <h3>${store.name} ${store.featured ? '<span class="badge featured">Featured</span>' : ''}</h3>\n          <p>${store.address}</p>\n          <p><a href="tel:${store.phone}">${store.phone}</a> | <a href="${store.website}" target="_blank" rel="noopener">Website</a></p>\n          <p>Products: ${appliances.join(', ') || 'N/A'}</p>\n          <p>Services: ${services.join(', ') || 'None'}</p>\n          <p>Status: <span class="open-status">Checking…</span></p>\n          <p><a href="#" class="show-on-map" data-idx="${idx}">Show on map</a></p>\n        </div>`;
+      return `
+        <div class="card store-card" id="store-${store.id}" data-hours='${JSON.stringify(store.hours)}'>
+          <h3>${store.name} ${store.featured ? '<span class="badge featured">Featured</span>' : ''}</h3>
+          <p>${store.address}</p>
+          <p><a href="tel:${store.phone}">${store.phone}</a> | <a href="${store.website}" target="_blank" rel="noopener">Website</a></p>
+          <p>Products: ${appliances.join(', ') || 'N/A'}</p>
+          <p>Services: ${services.join(', ') || 'None'}</p>
+          <p>Status: <span class="open-status">Checking…</span></p>
+          <p><a href="#" class="show-on-map" data-idx="${idx}">Show on map</a></p>
+        </div>`;
     }).join('');
     // Map data script: embed city center and store markers array
-    const mapScript = `<script>window.cityCenter = [${city.center[0]}, ${city.center[1]}];\nwindow.storeMarkers = ${JSON.stringify(sortedStores.map(s => ({ id: s.id, name: s.name, address: s.address, coords: s.coords })))};</script>`;
-    const content = `\n  <div class="container">\n    <h1>${city.name}, ${st.code}</h1>\n    ${intro}\n    ${kpiChips}\n    ${quickNavSection}\n    <div id="map" class="map-container" aria-label="Map of stores"></div>\n    <div class="grid grid-3">${storeCards}</div>\n  </div>`;
+    const mapScript = `<script>window.cityCenter = [${city.center[0]}, ${city.center[1]}];
+window.storeMarkers = ${JSON.stringify(sortedStores.map(s => ({ id: s.id, name: s.name, address: s.address, coords: s.coords })))};</script>`;
+    const content = `
+  <div class="container">
+    <h1>${city.name}, ${st.code}</h1>
+    ${intro}
+    ${kpiChips}
+    ${quickNavSection}
+    <div id="map" class="map-container" aria-label="Map of stores"></div>
+    <div class="grid grid-3">${storeCards}</div>
+  </div>`;
     // JSON-LD for city page (LocalBusiness list)
     const jsonLdItems = sortedStores.map(store => ({
       "@type": "LocalBusiness",
@@ -396,8 +478,17 @@ function buildAdvertisePage() {
     const features = card.features.map(f => `<li>${f}</li>`).join('');
     return `<div class="pricing-card"><h3>${card.title}</h3><p class="price">${card.price}</p><ul>${features}</ul><p><a class="btn" href="mailto:info@example.com?subject=Advertise">Get Started</a></p></div>`;
   }).join('');
-  const faq = `\n  <h2>Frequently Asked Questions</h2>\n  <p><strong>How do I pay?</strong> Once you sign up, we'll send you an invoice via email. No payment is processed on this site.</p>\n  <p><strong>Can I try it free?</strong> Yes! Use our <a href="${prefix('stores/new/')}">free listing</a> option to get started, then upgrade any time.</p>`;
-  const content = `\n  <div class="container">\n    <h1>Advertise With Us</h1>\n    <p>Reach motivated customers looking for discount appliances. Choose a plan that fits your business.</p>\n    <div class="pricing-grid">${cardsHtml}</div>\n    ${faq}\n  </div>`;
+  const faq = `
+  <h2>Frequently Asked Questions</h2>
+  <p><strong>How do I pay?</strong> Once you sign up, we'll send you an invoice via email. No payment is processed on this site.</p>
+  <p><strong>Can I try it free?</strong> Yes! Use our <a href="${prefix('stores/new/')}">free listing</a> option to get started, then upgrade any time.</p>`;
+  const content = `
+  <div class="container">
+    <h1>Advertise With Us</h1>
+    <p>Reach motivated customers looking for discount appliances. Choose a plan that fits your business.</p>
+    <div class="pricing-grid">${cardsHtml}</div>
+    ${faq}
+  </div>`;
   const html = renderPage({
     title: 'Advertise With Us – Scratch & Dent Locator',
     canonical: prefix('advertise-with-us/'),
@@ -430,7 +521,40 @@ function buildAddStorePage() {
   const hoursRows = days.map(day => {
     return `<tr><th>${day}</th><td><select name="hours_${day.toLowerCase()}_open">${options}</select></td><td><select name="hours_${day.toLowerCase()}_close">${options}</select></td></tr>`;
   }).join('');
-  const content = `\n  <div class="container">\n    <h1>Add Your Store</h1>\n    <p>Submit your scratch &amp; dent appliance store. Your submission will be reviewed before appearing in our directory.</p>\n    <form method="POST" action="https://formspree.io/f/maypkyzk">\n      <div class="form-group">\n        <label for="business-name">Business Name</label>\n        <input type="text" id="business-name" name="business_name" required></div>\n      <div class="form-group">\n        <label for="state">State</label>\n        <select id="state" name="state" required>${states.map(s => `<option value="${s.code}">${s.name}</option>`).join('')}</select></div>\n      <div class="form-group">\n        <label for="city">City</label>\n        <input type="text" id="city" name="city" required></div>\n      <div class="form-group">\n        <label for="address">Address</label>\n        <input type="text" id="address" name="address" required></div>\n      <div class="form-group">\n        <label for="phone">Phone</label>\n        <input type="tel" id="phone" name="phone" required></div>\n      <div class="form-group">\n        <label for="website">Website</label>\n        <input type="url" id="website" name="website"></div>\n      <h2>Store Hours</h2>\n      <table class="hours-table">\n        <thead><tr><th>Day</th><th>Open</th><th>Close</th></tr></thead>\n        <tbody>${hoursRows}</tbody>\n      </table>\n      <div class="form-group">\n        <label for="message">Additional Information</label>\n        <textarea id="message" name="message" rows="4"></textarea></div>\n      <button type="submit">Submit</button>\n    </form>\n  </div>`;
+  const content = `
+  <div class="container">
+    <h1>Add Your Store</h1>
+    <p>Submit your scratch &amp; dent appliance store. Your submission will be reviewed before appearing in our directory.</p>
+    <form method="POST" action="https://formspree.io/f/maypkyzk">
+      <div class="form-group">
+        <label for="business-name">Business Name</label>
+        <input type="text" id="business-name" name="business_name" required></div>
+      <div class="form-group">
+        <label for="state">State</label>
+        <select id="state" name="state" required>${states.map(s => `<option value="${s.code}">${s.name}</option>`).join('')}</select></div>
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required></div>
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required></div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required></div>
+      <div class="form-group">
+        <label for="website">Website</label>
+        <input type="url" id="website" name="website"></div>
+      <h2>Store Hours</h2>
+      <table class="hours-table">
+        <thead><tr><th>Day</th><th>Open</th><th>Close</th></tr></thead>
+        <tbody>${hoursRows}</tbody>
+      </table>
+      <div class="form-group">
+        <label for="message">Additional Information</label>
+        <textarea id="message" name="message" rows="4"></textarea></div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>`;
   const html = renderPage({
     title: 'Add Your Store – Scratch & Dent Locator',
     canonical: prefix('stores/new/'),
@@ -449,7 +573,12 @@ function buildAddStorePage() {
 
 // Build About page (/about/)
 function buildAboutPage() {
-  const content = `\n  <div class="container">\n    <h1>About Scratch &amp; Dent Locator</h1>\n    <p>We created this directory to help bargain hunters and environmentally conscious shoppers discover scratch &amp; dent appliance outlets across the United States. We believe great deals shouldn’t come at the expense of the planet, and slightly imperfect appliances deserve a second chance.</p>\n    <p>This project is maintained by a small team of volunteers. If you’d like to contribute information or suggest a store, please <a href="${prefix('contact/')}">get in touch</a>.</p>\n  </div>`;
+  const content = `
+  <div class="container">
+    <h1>About Scratch &amp; Dent Locator</h1>
+    <p>We created this directory to help bargain hunters and environmentally conscious shoppers discover scratch &amp; dent appliance outlets across the United States. We believe great deals shouldn’t come at the expense of the planet, and slightly imperfect appliances deserve a second chance.</p>
+    <p>This project is maintained by a small team of volunteers. If you’d like to contribute information or suggest a store, please <a href="${prefix('contact/')}">get in touch</a>.</p>
+  </div>`;
   const html = renderPage({
     title: 'About – Scratch & Dent Locator',
     canonical: prefix('about/'),
@@ -468,7 +597,13 @@ function buildAboutPage() {
 
 // Build Contact page (/contact/)
 function buildContactPage() {
-  const content = `\n  <div class="container">\n    <h1>Contact Us</h1>\n    <p>Have a question or suggestion? We’d love to hear from you. Email us or browse the directory to discover stores near you.</p>\n    <p><a class="btn" href="mailto:info@example.com?subject=Contact">Email Us</a></p>\n    <p>Not seeing your city? <a href="${prefix('stores/new/')}">Suggest a Store</a> or <a href="${prefix('scratch-and-dent-appliances/')}">Browse Directory</a> for nearby options.</p>\n  </div>`;
+  const content = `
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have a question or suggestion? We’d love to hear from you. Email us or browse the directory to discover stores near you.</p>
+    <p><a class="btn" href="mailto:info@example.com?subject=Contact">Email Us</a></p>
+    <p>Not seeing your city? <a href="${prefix('stores/new/')}">Suggest a Store</a> or <a href="${prefix('scratch-and-dent-appliances/')}">Browse Directory</a> for nearby options.</p>
+  </div>`;
   const html = renderPage({
     title: 'Contact – Scratch & Dent Locator',
     canonical: prefix('contact/'),
@@ -522,13 +657,18 @@ function buildSitemap() {
   urls.push({ loc: prefix('about/'), lastmod: today });
   urls.push({ loc: prefix('contact/'), lastmod: today });
   const xmlEntries = urls.map(u => `  <url><loc>${u.loc}</loc><lastmod>${u.lastmod}</lastmod></url>`).join('\n');
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${xmlEntries}\n</urlset>`;
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${xmlEntries}
+</urlset>`;
   fs.writeFileSync(path.join(distDir, 'sitemap.xml'), xml);
 }
 
 // Build robots.txt
 function buildRobots() {
-  const robots = `User-agent: *\nAllow: /\nSitemap: ${prefix('sitemap.xml')}`;
+  const robots = `User-agent: *
+Allow: /
+Sitemap: ${prefix('sitemap.xml')}`;
   fs.writeFileSync(path.join(distDir, 'robots.txt'), robots);
 }
 
