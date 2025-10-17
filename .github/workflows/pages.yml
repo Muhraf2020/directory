@@ -16,22 +16,25 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      # Makes paths work at https://USERNAME.github.io/REPO/
-      BASE_PATH: ${{ github.event.repository.name }}
     steps:
-      - name: Check out repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: "20"
 
-      # No npm install needed — your build script uses only core Node modules
+      - name: Install deps
+        run: npm ci
 
-      - name: Build pages
-        run: node scripts/build-pages.js
+      # If this repo is a GitHub project page, pass BASE_PATH as repo name.
+      # If you use a custom domain at root, delete the env: block.
+      - name: Build site
+        run: npm run build
+        env:
+          BASE_PATH: ${{ github.event.repository.name }}
+          GA_TAG: G-XXXXXXX
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -48,4 +51,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
